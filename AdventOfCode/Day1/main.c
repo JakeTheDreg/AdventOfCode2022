@@ -3,9 +3,9 @@
 int main() {
     FILE* file;
 
-    if((file = fopen("C:\\Users\\jrbra\\CLionProjects\\AdventOfCode\\Day1\\list.txt", "r")) == NULL){
+    if((file = fopen("..\\list.txt", "r")) == NULL){
         printf("Error opening file\n");
-        return 1;
+        return -1;
     }
     char line[10];
     int max;
