@@ -51,7 +51,7 @@ build cmake_object_order_depends_target_Day5Part1: phony || CMakeFiles/Day5Part1
 
 build CMakeFiles/Day5Part1.dir/main.c.obj: C_COMPILER__Day5Part1_Debug C$:/Users/jrbra/CLionProjects/AdventOfCode/AdventOfCode/Day5Part1/main.c || cmake_object_order_depends_target_Day5Part1
   DEP_FILE = CMakeFiles\Day5Part1.dir\main.c.obj.d
-  FLAGS = -g -std=gnu99
+  FLAGS = -Wall -fstack-protector -Wextra -Wfloat-equal -Wcast-align -g -std=gnu99
   OBJECT_DIR = CMakeFiles\Day5Part1.dir
   OBJECT_FILE_DIR = CMakeFiles\Day5Part1.dir
 
@@ -64,7 +64,7 @@ build CMakeFiles/Day5Part1.dir/main.c.obj: C_COMPILER__Day5Part1_Debug C$:/Users
 # Link the executable Day5Part1.exe
 
 build Day5Part1.exe: C_EXECUTABLE_LINKER__Day5Part1_Debug CMakeFiles/Day5Part1.dir/main.c.obj
-  FLAGS = -g
+  FLAGS = -Wall -fstack-protector -Wextra -Wfloat-equal -Wcast-align -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Day5Part1.dir
   POST_BUILD = cd .
