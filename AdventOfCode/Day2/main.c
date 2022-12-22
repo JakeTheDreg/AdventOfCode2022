@@ -33,7 +33,7 @@ int match(char opponent, char you){
 int main() {
 
     FILE* file;
-    if((file = fopen("C:\\Users\\jrbra\\CLionProjects\\AdventOfCode\\Day2\\Cipher.txt", "r")) == NULL){
+    if((file = fopen("..\\Cipher.txt", "r")) == NULL){
         printf("Error opening file\n");
         return -1;
     }
