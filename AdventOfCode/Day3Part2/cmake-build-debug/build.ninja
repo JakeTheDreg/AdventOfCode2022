@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: Day2Part2
+# Project: Day3Part2
 # Configurations: Debug
 # =============================================================================
 
@@ -39,49 +39,49 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = C$:/Users/jrbra/CLionProjects/AdventOfCode/AdventOfCode/Day2Part2/cmake-build-debug/
+cmake_ninja_workdir = C$:/Users/jrbra/CLionProjects/AdventOfCode/AdventOfCode/Day3Part2/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target Day2Part2
+# Object build statements for EXECUTABLE target Day3Part2
 
 
 #############################################
-# Order-only phony target for Day2Part2
+# Order-only phony target for Day3Part2
 
-build cmake_object_order_depends_target_Day2Part2: phony || CMakeFiles/Day2Part2.dir
+build cmake_object_order_depends_target_Day3Part2: phony || CMakeFiles/Day3Part2.dir
 
-build CMakeFiles/Day2Part2.dir/main.c.obj: C_COMPILER__Day2Part2_Debug C$:/Users/jrbra/CLionProjects/AdventOfCode/AdventOfCode/Day2Part2/main.c || cmake_object_order_depends_target_Day2Part2
-  DEP_FILE = CMakeFiles\Day2Part2.dir\main.c.obj.d
+build CMakeFiles/Day3Part2.dir/main.c.obj: C_COMPILER__Day3Part2_Debug C$:/Users/jrbra/CLionProjects/AdventOfCode/AdventOfCode/Day3Part2/main.c || cmake_object_order_depends_target_Day3Part2
+  DEP_FILE = CMakeFiles\Day3Part2.dir\main.c.obj.d
   FLAGS = -g -std=gnu99
-  OBJECT_DIR = CMakeFiles\Day2Part2.dir
-  OBJECT_FILE_DIR = CMakeFiles\Day2Part2.dir
-  TARGET_COMPILE_PDB = CMakeFiles\Day2Part2.dir\
-  TARGET_PDB = Day2Part2.pdb
+  OBJECT_DIR = CMakeFiles\Day3Part2.dir
+  OBJECT_FILE_DIR = CMakeFiles\Day3Part2.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Day3Part2.dir\
+  TARGET_PDB = Day3Part2.pdb
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target Day2Part2
+# Link build statements for EXECUTABLE target Day3Part2
 
 
 #############################################
-# Link the executable Day2Part2.exe
+# Link the executable Day3Part2.exe
 
-build Day2Part2.exe: C_EXECUTABLE_LINKER__Day2Part2_Debug CMakeFiles/Day2Part2.dir/main.c.obj
+build Day3Part2.exe: C_EXECUTABLE_LINKER__Day3Part2_Debug CMakeFiles/Day3Part2.dir/main.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\Day2Part2.dir
+  OBJECT_DIR = CMakeFiles\Day3Part2.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\Day2Part2.dir\
-  TARGET_FILE = Day2Part2.exe
-  TARGET_IMPLIB = libDay2Part2.dll.a
-  TARGET_PDB = Day2Part2.pdb
+  TARGET_COMPILE_PDB = CMakeFiles\Day3Part2.dir\
+  TARGET_FILE = Day3Part2.exe
+  TARGET_IMPLIB = libDay3Part2.dll.a
+  TARGET_PDB = Day3Part2.pdb
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\jrbra\CLionProjects\AdventOfCode\AdventOfCode\Day2Part2\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2022.2.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D C:\Users\jrbra\CLionProjects\AdventOfCode\AdventOfCode\Day3Part2\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2022.2.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -92,7 +92,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\jrbra\CLionProjects\AdventOfCode\AdventOfCode\Day2Part2\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2022.2.2\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\jrbra\CLionProjects\AdventOfCode\AdventOfCode\Day2Part2 -BC:\Users\jrbra\CLionProjects\AdventOfCode\AdventOfCode\Day2Part2\cmake-build-debug"
+  COMMAND = cmd.exe /C "cd /D C:\Users\jrbra\CLionProjects\AdventOfCode\AdventOfCode\Day3Part2\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2022.2.2\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\jrbra\CLionProjects\AdventOfCode\AdventOfCode\Day3Part2 -BC:\Users\jrbra\CLionProjects\AdventOfCode\AdventOfCode\Day3Part2\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -102,7 +102,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build Day2Part2: phony Day2Part2.exe
+build Day3Part2: phony Day3Part2.exe
 
 # =============================================================================
 # Folder targets.
@@ -110,9 +110,9 @@ build Day2Part2: phony Day2Part2.exe
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/jrbra/CLionProjects/AdventOfCode/AdventOfCode/Day2Part2/cmake-build-debug
+# Folder: C:/Users/jrbra/CLionProjects/AdventOfCode/AdventOfCode/Day3Part2/cmake-build-debug
 
-build all: phony Day2Part2.exe
+build all: phony Day3Part2.exe
 
 # =============================================================================
 # Built-in targets
