@@ -14,15 +14,34 @@ int getPriorities(char rucksack[64]){
     memcpy(compartment2, rucksack+len1, len2);
     compartment2[len2] = '\0';
 
+    int item;
+
+    for(int i = 0; i<len1; i++){
+        for(int j = 0; j<len2; j++){
+            if(compartment1[i] == compartment2[j]){
+                item = compartment1[i];
+                break;
+            }
+        }
+    }
+
+    if(item > 96){
+        item -= 96;
+    }
+    else{
+        item -= 38;
+    }
 
 
     free(compartment2);
     free(compartment1);
+    printf("%d\n", item);
+    return item;
 }
 
 int main() {
     FILE* file;
-    if((file = fopen("C:\\Users\\jrbra\\CLionProjects\\AdventOfCode\\Day3", "r")) == NULL){
+    if((file = fopen("..\\RuckSacks.txt", "r")) == NULL){
         printf("Error reading file\n");
         return -1;
     }
@@ -36,5 +55,6 @@ int main() {
     }
     printf("%d", sum);
 
+    fclose(file);
     return 0;
 }
