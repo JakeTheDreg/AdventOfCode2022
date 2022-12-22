@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 #define MAX 64
-#define WIDTH 20
+#define WIDTH 21
 #define LENGTH 9
 
 char *bigs[MAX] = {"DBJV", "PVBWRDF", "RGFLDCWQ", "WJPMLNDB", "HNBPCSQ", "RDBSNG", "ZBPMQFSH", "WLF", "SVFMR"};
@@ -18,6 +18,13 @@ char** initStacks(){
         stacks[i] = temp;
     }
     return stacks;
+}
+
+void freeStacks(char** stacks){
+    for(int i =0; i < LENGTH; i++){
+        free(stacks[i]);
+    }
+    free(stacks);
 }
 
 void moveOne(char **src, char **dst){
@@ -66,7 +73,8 @@ int main() {
         printf("%c", stacks[i][this]);
     }
 
-
     fclose(puzzleFile);
+    freeStacks(stacks);
+
     return 0;
 }
