@@ -2,39 +2,35 @@
 #include <string.h>
 
 #define MAX 56
-#define STACKWIDTH 36
+#define WIDTH 20
 
 int main() {
     FILE* puzzleFile;
-    FILE* cratesFile;
 
     if((puzzleFile = fopen("..\\puzzle.txt", "r")) == NULL){
         printf("Error opening puzzle.txt\n");
         return -1;
     }
-    if((cratesFile = fopen("..\\crates.txt", "r")) == NULL){
-        printf("Error opening crates.txt\n");
-        return -1;
+
+    char stack1[MAX] = "DBJV";
+    char stack2[MAX] = "PVBWRDF";
+    char stack3[MAX] = "RGFLDCWQ";
+    char stack4[MAX] = "WJPMLNDB";
+    char stack5[MAX] = "HNBPCSQ";
+    char stack6[MAX] = "RDBSNG";
+    char stack7[MAX] = "ZBPMQFSH";
+    char stack8[MAX] = "WLF";
+    char stack9[MAX] = "SVFMR";
+    char* stacks[9] = {stack1, stack2, stack3, stack4, stack5, stack6, stack7, stack8, stack9};
+    char line[WIDTH];
+    int num;
+    int src;
+    int dst;
+
+    while(fgets(line, WIDTH, puzzleFile) != NULL){
+        sscanf(line, "move %d from %d to %d", &num, &src, &dst);
     }
 
-
-    char stack1[MAX];
-    char stack2[MAX];
-    char stack3[MAX];
-    char stack4[MAX];
-    char stack5[MAX];
-    char stack6[MAX];
-    char stack7[MAX];
-    char stack8[MAX];
-    char stack9[MAX];
-
-
-    fclose(cratesFile);
-
-
-
-
     fclose(puzzleFile);
-
     return 0;
 }
